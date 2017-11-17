@@ -1,26 +1,25 @@
-// USER PROFILES
-
 // @jeremyboulerice profile
 const jeremyboulerice = {
-     userID: "jeremyboulerice",
-     password: "HelloWorld1234!"
+     username: "jeremyboulerice",
+     password: "hello"
 }
 
-// login form
-var loginForm = document.getElementById("loginForm").value;
-// content block
-var contentBlock = document.getElementById("content").value;
-
-// logIn() function
 function logIn() {
+     // content block
+     var contentBlock = document.getElementById("content");
+     // login form
+     var loginForm = document.getElementById("loginForm");
+
      // user input
-     var userIDInput = document.getElementById("userID").value;
-     var passwordInput = document.getElementById("password").value;
+     var inputUserID = document.getElementById("userID").value;
+     var inputPassword = document.getElementById("password").value;
+
      // validation
-     if (userIDInput == jeremyboulerice.userID && passwordInput == jeremyboulerice.password) {
-          loginForm.classList.add('hideContent');
-          contentBlock.classList.add('showContent');
+     if (inputUserID === jeremyboulerice.username && inputPassword === jeremyboulerice.password) {
+          contentBlock.className += "showContent";
+          loginForm.className += "hideContent";
      } else {
-          alert("error"); // action
+          alert("ERROR");
      }
+
 }
