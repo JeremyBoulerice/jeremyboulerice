@@ -1,0 +1,27 @@
+* {
+     margin: 0;
+     padding: 0;
+     list-style-type: none;
+     font-family: sans-serif;
+}
+
+html, body {
+     background-color: #f4f4f4;
+}
+
+div#content {
+     width: 90%;
+     height: 250px;
+     background-color: #000;
+
+     display: block;
+     margin: 0 auto;
+}
+
+.hideContent {
+     display: none !important;
+}
+
+.showContent {
+     display: inline !important;
+}
