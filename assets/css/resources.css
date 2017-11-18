@@ -1,3 +1,5 @@
+/* defaults */
+
 * {
      margin: 0;
      padding: 0;
@@ -15,16 +17,19 @@ h1,h2,h3,h4,h5,h6,p,a {
      font-weight: bold;
 }
 
+/* login */
+
 div#loginForm {
      height: 125px;
      width: 350px;
-     background-color: #34495e;
+     background-color: #141414;
+     border-radius: 5px;
 
      padding: 35px;
      position: absolute;
      top: 50%;
      left: 50%;
-     margin: -80px 0 0 -210px;
+     margin: -100px 0 0 -210px;
 }
 
 div#loginForm input {
@@ -52,13 +57,18 @@ div#loginForm button {
      height: 35px;
 }
 
+/* content */
+
 div#content {
+     color: #fff;
      width: 85%;
-     height: 250px;
+     height: 600px;
      background-color: #141414;
 
      padding: 35px;
      margin: 0 auto;
+
+     overflow: scroll;
 }
 
 .hideContent {

@@ -1,7 +1,7 @@
 // @jeremyboulerice profile
 const jeremyboulerice = {
      username: "jeremyboulerice",
-     password: "hello"
+     password: "hello123!"
 }
 
 function logIn() {
